@@ -1,0 +1,41 @@
+// BORDER-RADIUS
+$gl-radius: 3px;
+@mixin radius($top-left: $gl-radius, $top-right: $gl-radius, $bottom-right: $gl-radius, $bottom-left: $gl-radius) {
+	-webkit-border-top-left-radius: $top-left;
+	border-top-left-radius: $top-left;
+	-webkit-border-top-right-radius: $top-right;
+	border-top-right-radius: $top-right;
+	-webkit-border-bottom-right-radius: $bottom-right;
+	border-bottom-right-radius: $bottom-right;
+	-webkit-border-bottom-left-radius: $bottom-left;
+	border-bottom-left-radius: $bottom-left;
+	background-clip: padding-box;
+	/* stops bg color from leaking outside the border: */
+}
+
+
+@mixin transition($trans: .3s, $target: all) {
+	-webkit-transition: $target $trans;
+	transition: $target $trans;
+}
+
+@mixin btn($bg: $header-color, $color: $white-color, $width: 120px) {
+
+	min-width: $width;
+	color: $color;
+	background: $bg;
+	padding: 6px 12px;
+	display: inline-block;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 14px;
+	height: 30px;
+	line-height: 18px;
+	font-weight: 700;
+	@include transition;
+	@include radius;
+	&:hover,&:focus {
+		background: darken($bg, 5);
+        color:$color;
+	}
+}

@@ -1,0 +1,104 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>15-Puzzle</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href=" dist/css/style.css">
+        
+    </head>
+
+    <body style="margin:0px;" onload="startPuzzle()">
+      <header>
+        <div class="custom-header">
+          <div class="block-text">    
+              <span class="blocks"> N </span>
+              <span class="blocks"> U </span>
+              <span class="blocks"> B </span>
+              <span class="blocks"> L </span>
+              <span class="blocks"> E </span>  
+          </div>
+        </div>
+      </header>
+      <section class="main-section">
+          
+          <section class="left-side-content"> 
+              <div class="timer-moves-box">
+                  <span class="moves">  
+                      <span class="icon icon-moves">
+                        
+                      </span>
+                      <span class="text">
+                        MOVES: <span id="moves"> 0 </span> 
+                      </span>
+                  </span> 
+                  <span class="timer">  
+                      <span class="icon icon-timer">
+                      </span>
+                      <span class="text">
+                        TIMER: <span id="time"> </span>
+                      </span>
+                  </span>
+                  
+              </div>
+
+              <div class="action-buttons"> 
+                <a href="#" class="btn-green" onclick="window.location.reload()">NEW GAME</a>
+                <a href="#" class="btn-maroon" onclick="easyGame()">Easy Game</a>
+              </div>
+          </section>
+          <section class="main-content">  
+              <div class="game-section"> 
+                  <h2 style="margin:0;">15-Puzzle</h2>
+                  <p>
+                  </p>
+                  <p>
+                  </p>
+                  <table class="box">
+                    <tr>
+                      <td id="0" class="cell" onclick="clickCell(this)">1</td>
+                      <td id="1" class="cell" onclick="clickCell(this)">2</td>
+                      <td id="2" class="cell" onclick="clickCell(this)">3</td>
+                      <td id="3" class="cell" onclick="clickCell(this)">4</td>
+                    </tr>
+                    <tr>
+                      <td id="4" class="cell" onclick="clickCell(this)">5</td>
+                      <td id="5" class="cell" onclick="clickCell(this)">6</td>
+                      <td id="6" class="cell" onclick="clickCell(this)">7</td>
+                      <td id="7" class="cell" onclick="clickCell(this)">8</td>
+                    </tr>
+                    <tr>
+                      <td id="8" class="cell" onclick="clickCell(this)">9</td>
+                      <td id="9" class="cell" onclick="clickCell(this)">10</td>
+                      <td id="10" class="cell" onclick="clickCell(this)">11</td>
+                      <td id="11" class="cell" onclick="clickCell(this)">12</td>
+                    </tr>
+                    <tr>
+                      <td id="12" class="cell" onclick="clickCell(this)">13</td>
+                      <td id="13" class="cell" onclick="clickCell(this)">14</td>
+                      <td id="14" class="cell" onclick="clickCell(this)">15</td>
+                      <td id="15" class="cell" onclick="clickCell(this)"></td>
+                    </tr>
+                  </table> 
+
+                  <div class="alert-box" id="alert-message">
+
+                  </div>  
+              </div>
+            
+          </section>
+          <section class="right-side-content"> 
+              <div class="moves-box">
+                  <h1>your moves</h1> 
+                  <ol id="moves-list">  
+                  </ol>
+              </div>
+          </section>
+          
+      </section>
+      
+    </body>
+    <script src="src/js/puzzle.js" type="text/javascript"></script>
+</html>
