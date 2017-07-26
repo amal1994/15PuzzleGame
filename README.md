@@ -1,21 +1,11 @@
-Name - AMAL SHUKLA
-Contact number - 8860996894
-github-id : amal1994
-codechef handle - amal199404
-e-mail - shuklamal94@gmail.com
 
 4*4 Grid Puzzle
 =========
 
 1)To play the game you just need to run index.html file
 
-2)No css framework was used as design was simple and i've implemented it using sass
+2)The puzzle.js file in js folder inside of src folder contains the logic to control the game
 
-3)The puzzle.js file in js folder inside of src folder contains the logic to control the game
-
-4)The design is responsive
-
-5)The log tracking is present on the right hand side div
 
 
 Here below is the link to gif of the Puzzle Game
